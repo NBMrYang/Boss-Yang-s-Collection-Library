@@ -1,0 +1,24 @@
+.LeftEdit{
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    .editButton{
+        width: 100%;
+        height: calc(100vh *40/977);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        box-sizing: border-box;
+        .custom-button{
+            width: calc(100vw *120/1920);
+            height: calc(100vh *30/977);
+        }
+    }
+    .bottomEdit{
+        width: 100%;
+        height: calc(100% - calc(100vh *40/977));
+        overflow: hidden;
+    }
+}

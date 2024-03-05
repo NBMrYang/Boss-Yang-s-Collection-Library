@@ -1,0 +1,14 @@
+.rowChart {
+	margin-bottom: calc(100vh * 20 / 977);
+	.chart-top-header-name {
+		font-weight: 600;
+		font-size: 1vw;
+	}
+	&:hover {
+		cursor: pointer;
+        transform: scale(1.05);
+		.chart-top-header-name {
+			color: var(--chart-top-header-hover-name);
+		}
+	}
+}
