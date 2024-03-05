@@ -1,24 +1,34 @@
-.LeftEdit{
-    width: 100%;
-    height: calc(100vh - 60px);
-    overflow: hidden;
-    .editButton{
-        width: 100%;
-        height: calc(100vh *40/977);
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 20px;
-        box-sizing: border-box;
-        .custom-button{
-            width: calc(100vw *120/1920);
-            height: calc(100vh *30/977);
-        }
-    }
-    .bottomEdit{
-        width: 100%;
-        height: calc(100% - calc(100vh *40/977));
-        overflow: hidden;
-    }
+.LeftEdit {
+	width: 100%;
+	height: calc(100vh - 60px);
+	overflow: hidden;
+	.editButton {
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		height: calc(100vh * 40 / 977);
+		.theme {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			.themeTitle {
+				display: flex;
+				align-items: center;
+				margin-right: 10px;
+				font-size: calc(100vw * 16 / 1920);
+			}
+		}
+		.custom-button {
+			height: calc(100vh * 30 / 977);
+			margin-left: 1vw;
+		}
+	}
+	.bottomEdit {
+		width: 100%;
+		height: calc(100% - calc(100vh * 40 / 977));
+		overflow: hidden;
+	}
 }
