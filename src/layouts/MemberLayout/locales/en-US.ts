@@ -40,4 +40,18 @@ export default {
 
 	"member-layout.menu.routeMetaExtend": "RouteMeta",
 	"member-layout.menu.routeMetaExtend.breadcrumb": "Custom breadcrumbs",
+
+	"member-layout.editchart.header": "Boss Yang's Collection Library",
+	"member-layout.editchart.theme": "Theme",
+	"member-layout.editchart.themeName.abcdef": "Bright Blue",
+	"member-layout.editchart.themeName.3024-day": "3024 daytime",
+	"member-layout.editchart.themeName.3024-night": "3024 Nighttime",
+	"member-layout.editchart.themeName.ambiance": "Atmosphere",
+	"member-layout.editchart.themeName.base16-dark": "Basic 16 Dark",
+	"member-layout.editchart.themeName.base16-light": "Basic 16 Bright Colors",
+	"member-layout.editchart.themeName.blackboard": "Blackboard",
+	"member-layout.editchart.themeName.dracula": "Dracula",
+	"member-layout.editchart.themeName.colorforth": "Colorforth",
+	"member-layout.editchart.themeName.liquibyte": "Liquid bit",
+	"member-layout.editchart.button": "run",
 };

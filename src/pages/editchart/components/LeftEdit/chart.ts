@@ -1,3 +1,6 @@
+import { useI18n } from "@/composables/useI18n";
+import locales from "@/layouts/MemberLayout/locales/index";
+const t = useI18n(locales);
 // interface chartProp{
 //     [key:string]:string
 // }
@@ -214,3 +217,50 @@ export let chartData: any = {
         ]
       }`,
 };
+interface themeType {
+	label: string;
+	value: string;
+}
+
+export let themeData: themeType[] = [
+	{
+		value: "abcdef",
+		label: t(`member-layout.editchart.themeName.abcdef`),
+	},
+	{
+		value: "3024-day",
+		label: t(`member-layout.editchart.themeName.3024-day`),
+	},
+	{
+		value: "3024-night",
+		label: t(`member-layout.editchart.themeName.3024-night`),
+	},
+	{
+		value: "ambiance",
+		label: t(`member-layout.editchart.themeName.ambiance`),
+	},
+	{
+		value: "base16-dark",
+		label: t(`member-layout.editchart.themeName.base16-dark`),
+	},
+	{
+		value: "base16-light",
+		label: t(`member-layout.editchart.themeName.base16-light`),
+	},
+	{
+		value: "blackboard",
+		label: t(`member-layout.editchart.themeName.blackboard`),
+	},
+	{
+		value: "dracula",
+		label: t(`member-layout.editchart.themeName.dracula`),
+	},
+	{
+		value: "colorforth",
+		label: t(`member-layout.editchart.themeName.colorforth`),
+	},
+	{
+		value: "liquibyte",
+		label: t(`member-layout.editchart.themeName.liquibyte`),
+	},
+];

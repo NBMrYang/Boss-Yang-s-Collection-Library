@@ -8,7 +8,7 @@ import { useUserStore } from "@/store/user";
 
 import { useI18n } from "@/composables/useI18n";
 import locales from "../locales";
-
+const t = useI18n(locales);
 interface Props {
 	customClass?: string;
 }
@@ -16,8 +16,6 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
 	customClass: "",
 });
-
-const t = useI18n(locales);
 
 const router = useRouter();
 const userStore = useUserStore();

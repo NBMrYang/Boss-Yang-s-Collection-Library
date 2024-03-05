@@ -1,7 +1,20 @@
 <template>
 	<div class="LeftEdit">
 		<div class="editButton">
-			<el-button class="custom-button" type="primary" @click="handleSave">运行</el-button>
+			<div class="theme">
+				<div class="themeTitle">{{ t("member-layout.editchart.theme") }}:</div>
+				<el-select v-model="themeName" @change="changeTheme" placeholder="Select" style="width: 240px">
+					<el-option v-for="item in themeData" :key="item.value" :label="item.label" :value="item.value">
+						<span style="float: left">{{ t(`member-layout.editchart.themeName.${item.value}`) }}</span>
+					</el-option>
+					<template #tag>
+						<el-tag color="red" />
+					</template>
+				</el-select>
+			</div>
+			<el-button class="custom-button" type="primary" @click="handleSave">{{
+				t("member-layout.editchart.button")
+			}}</el-button>
 		</div>
 		<div class="bottomEdit">
 			<Codemirror
@@ -25,22 +38,28 @@ import "codemirror/mode/javascript/javascript.js";
 import Codemirror from "codemirror-editor-vue3";
 import "codemirror/addon/selection/active-line.js";
 import "codemirror/lib/codemirror.css";
-import "codemirror/theme/ayu-mirage.css";
 import "codemirror/addon/edit/matchbrackets.js";
-import "codemirror/theme/neo.css";
 import "codemirror/theme/abcdef.css";
 import { useRouter } from "vue-router";
-import { chartData } from "./chart";
+import { chartData, themeData } from "./chart";
+import { useI18n } from "@/composables/useI18n";
+import locales from "@/layouts/MemberLayout/locales/index";
+const t = useI18n(locales);
 const router = useRouter();
 let id = String(router.currentRoute.value.query.id);
+let changeTheme = async () => {
+	await import(`../../../../../node_modules/codemirror/theme/${themeName.value}.css`);
+	cmOptions.theme = themeName.value;
+};
 let optionName = `let option ={} //更改option名称请同时更改 
 `;
 let code = ref(optionName + chartData[id]);
 const emit = defineEmits<{
 	(e: "save-chart-data", value: any): void;
 }>();
+let themeName = ref<string>("abcdef");
 const cmRef = ref();
-const cmOptions = reactive({
+let cmOptions: any = reactive({
 	mode: "text/javascript",
 	theme: "abcdef",
 	lineNumbers: true,
@@ -78,6 +97,5 @@ function handleSave() {
 </script>
 
 <style scoped>
-@import url("./css/index.scss");
+@import "./css/index.scss";
 </style>
-

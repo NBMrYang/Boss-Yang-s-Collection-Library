@@ -40,4 +40,18 @@ export default {
 
 	"member-layout.menu.routeMetaExtend": "RouteMeta擴展",
 	"member-layout.menu.routeMetaExtend.breadcrumb": "自定義面包屑",
+
+	"member-layout.editchart.header": "楊老闆的收藏庫",
+	"member-layout.editchart.theme": "主題",
+	"member-layout.editchart.themeName.abcdef": "亮藍",
+	"member-layout.editchart.themeName.3024-day": "3024日間",
+	"member-layout.editchart.themeName.3024-night": "3024夜間",
+	"member-layout.editchart.themeName.ambiance": "氛圍",
+	"member-layout.editchart.themeName.base16-dark": "基礎16暗色",
+	"member-layout.editchart.themeName.base16-light": "基礎16亮色",
+	"member-layout.editchart.themeName.blackboard": "黑板",
+	"member-layout.editchart.themeName.dracula": "德古拉",
+	"member-layout.editchart.themeName.colorforth": "色彩前進",
+	"member-layout.editchart.themeName.liquibyte": "液化岩",
+	"member-layout.editchart.button": "運行",
 };
