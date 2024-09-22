@@ -12,6 +12,7 @@ import router from "@/config/router";
 import store from "@/config/store";
 // Register icon sprite
 import "virtual:svg-icons-register";
+import "./assets/fonts/font.scss";
 
 const app = createApp(App);
 app.use(router);

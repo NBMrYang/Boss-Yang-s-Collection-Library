@@ -4,6 +4,8 @@ export default {
 
 	"member-layout.menu.home": "Home Page",
 
+	"member-layout.menu.chart": "Chart list",
+
 	"member-layout.menu.link": "External link",
 	"member-layout.menu.link.github": "Github repository",
 	"member-layout.menu.link.gitee": "Gitee repository",

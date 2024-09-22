@@ -409,7 +409,9 @@
 		.member-layout-right-main {
 			position: relative;
 			flex: 1;
+			height: 100%;
 			margin: var(--ft-mb-layout-main-padding);
+			overflow: hidden;
 			.member-layout-main-screen {
 				position: absolute;
 				top: 0;

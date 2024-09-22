@@ -8,6 +8,9 @@ dependencies:
   axios:
     specifier: ^1.2.2
     version: 1.3.2
+  cesium:
+    specifier: ^1.77.0
+    version: 1.77.0
   codemirror:
     specifier: 5.x
     version: 5.65.16
@@ -20,6 +23,9 @@ dependencies:
   element-plus:
     specifier: ^2.2.30
     version: 2.2.30(vue@3.2.47)
+  gsap:
+    specifier: ^3.12.5
+    version: 3.12.5
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -35,6 +41,9 @@ dependencies:
   qs:
     specifier: ^6.11.0
     version: 6.11.0
+  three:
+    specifier: ^0.137.0
+    version: 0.137.5
   vue:
     specifier: ^3.2.45
     version: 3.2.47
@@ -1010,6 +1019,10 @@ packages:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
     dev: true
+
+  /cesium@1.77.0:
+    resolution: {integrity: sha512-UpxTOaLJDRYkp5xcqg8wpYjzlSE10czz8ixiOC7R0DRwDdj/Yp8/BauLdEeIMCaEy9Lvb8BKrg8HppzR/Be7bQ==}
+    dev: false
 
   /chalk@1.1.3:
     resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
@@ -2349,6 +2362,10 @@ packages:
   /grapheme-splitter@1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
+
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+    dev: false
 
   /hard-rejection@2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
@@ -4480,6 +4497,10 @@ packages:
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
+
+  /three@0.137.5:
+    resolution: {integrity: sha512-rTyr+HDFxjnN8+N/guZjDgfVxgHptZQpf6xfL/Mo7a5JYIFwK6tAq3bzxYYB4Ae0RosDZlDuP+X5aXDXz+XnHQ==}
+    dev: false
 
   /through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}

@@ -54,12 +54,12 @@ const routes: RouteRecordRaw[] = [
 					},
 				],
 			},
-		]
+		],
 	},
 
 	{
 		path: "/EditChart",
-		name:"EditChart",
+		name: "EditChart",
 		component: () => import("@/pages/editchart/index.vue"),
 	},
 	{
@@ -82,8 +82,6 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
 	// start progress bar
 	NProgress.start();
-	console.log("走这了",from,to);
-	
 	// 在跳转之前，清除所有ajax请求
 	requestCanceler.removeAllPending();
 

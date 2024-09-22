@@ -4,6 +4,8 @@ export default {
 
 	"member-layout.menu.home": "首页",
 
+	"member-layout.menu.chart": "图表库",
+
 	"member-layout.menu.link": "外部链接",
 	"member-layout.menu.link.github": "Github 仓库",
 	"member-layout.menu.link.gitee": "Gitee 仓库",

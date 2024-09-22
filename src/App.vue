@@ -12,7 +12,7 @@ onMounted(() => {
 });
 
 // 设置主题
-useTheme();
+useTheme(false);
 // 设置菜单导航布局
 useMenuLayout();
 // 菜单导航风格

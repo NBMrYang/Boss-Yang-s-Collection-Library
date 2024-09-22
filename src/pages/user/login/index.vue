@@ -8,7 +8,6 @@ import { IResponseData } from "@/@types/utils.request";
 import { LoginParamsType } from "./data";
 import { accountLogin } from "./server";
 const router = useRouter();
-
 const formRef = ref<FormInstance>();
 const formData = reactive<LoginParamsType>({
 	username: "",
@@ -61,7 +60,7 @@ const onSubmit = async () => {
 	<div class="user-login">
 		<el-form ref="formRef" :model="formData" :rules="rules">
 			<div class="title">
-				<div>登录到</div>
+				<div>欢迎来到</div>
 				<div>杨老板的收藏库</div>
 			</div>
 			<div class="item">
@@ -105,12 +104,16 @@ const onSubmit = async () => {
 
 <style scoped lang="scss">
 .user-login {
+	position: relative;
+	z-index: 2;
 	width: 380px;
 	padding-bottom: 40px;
 	.title {
 		padding: 0 20px 20px;
 		font-size: 30px;
 		line-height: 50px;
+		color: #ffffff;
+		user-select: none;
 	}
 	.item {
 		padding: 5px 20px;

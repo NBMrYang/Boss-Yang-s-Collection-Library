@@ -10,6 +10,14 @@ const MemberLayoutRoutes: RouteRecordRaw[] = [
 		path: homePath,
 		component: () => import("@/pages/home/index.vue"),
 	},
+	{
+		meta: {
+			title: "member-layout.menu.chart",
+			icon: "menu-chart",
+		},
+		path: "/chart",
+		component: () => import("@/pages/chart/index.vue"),
+	},
 	// {
 	// 	meta: {
 	// 		title: "member-layout.menu.link",

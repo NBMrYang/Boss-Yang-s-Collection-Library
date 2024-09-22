@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<Props>(), {
 const globalStore = useGlobalStore();
 
 const drawer = ref(false);
-const isDark = useTheme();
+const isDark = useTheme(true);
 const menuLayout = useMenuLayout();
 const menuStyle = useMenuStyle();
 </script>

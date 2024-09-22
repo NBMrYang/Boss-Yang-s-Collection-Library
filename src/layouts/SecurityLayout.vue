@@ -38,8 +38,6 @@ const getUser = async () => {
 	}
 };
 onMounted(() => {
-	console.log("走过一次了");
-	
 	getUser();
 });
 </script>
